@@ -5,3 +5,4 @@ def main():
   me=input("_-")
   if me in ['1']:import test
   else:import test_file
+main()
