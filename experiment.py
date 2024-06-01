@@ -76,7 +76,7 @@ def test_1(uid,names,pwx,ua):
             'Host': 'api.facebook.com',
             'user-agent': add_ua+ua,
             'content-type': 'application/json;charset=utf-8',
-            'content-length': str(len(str(dt))*3),
+            'content-length': str(len(str(data))*3),
             'accept-encoding': 'gzip'}
             
             url= 'https://api.facebook.com/method/auth.login'
@@ -123,7 +123,7 @@ def test_2(uid,names,pwx,ua):
             'Host': 'graph.facebook.com',
             'user-agent': add_ua+ua,
             'content-type': 'application/json;charset=utf-8',
-            'content-length': str(len(str(dt))*3),
+            'content-length': str(len(str(data))*3),
             'accept-encoding': 'gzip'}
             
             url=f'https://graph.facebook.com/auth/login'
@@ -167,7 +167,7 @@ def test_3(uid,names,pwx,ua):
             'Host': 'b-graph.facebook.com',
             'user-agent': add_ua+ua,
             'content-type': 'application/json;charset=utf-8',
-            'content-length': str(len(str(dt))*3),
+            'content-length': str(len(str(data))*3),
             'accept-encoding': 'gzip'}
             url=f'https://b-graph.facebook.com/auth/login'
             rq=requests.post(url,data=data,headers=head).json()
