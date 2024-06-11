@@ -63,7 +63,7 @@ def main():
             gg=str(random.choice(range(10000000,99999999)))
             user.append(gg)
     else:main()
-    with ThreadPool(max_workers=55) as update:
+    with ThreadPool(max_workers=45) as update:
         os.system("clear")
         print(logo)
         print("—"*30)
@@ -87,7 +87,7 @@ def main():
         os.system("clear")
         print(logo)
         print("—"*30)
-        print(f" Method : "+fb)
+        print(f"  Method : "+fb)
         print("  Used Code "+code)
         print("—"*30)
         for xd in user:
