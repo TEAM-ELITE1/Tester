@@ -40,7 +40,7 @@ def main():
         print(" CODE: 9848 9946 9832")
         print("—"*30)
         code=input("[!] -->")
-        for i in range(10000):
+        for i in range(100000):
             gg=str(random.choice(range(1000000,9999999)))
             user.append(gg)
     elif "2" in kkk:
